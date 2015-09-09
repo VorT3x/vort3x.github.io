@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sailsjs on VorT3x&#39;s Blog</title>
+    <link>http://vort3x.me/tags/sailsjs/</link>
+    <description>Recent content in Sailsjs on VorT3x&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 19 May 2015 00:14:33 +0300</lastBuildDate>
+    <atom:link href="http://vort3x.me/tags/sailsjs/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Sails.js on Heroku</title>
+      <link>http://vort3x.me/sailsjs-heroku/</link>
+      <pubDate>Tue, 19 May 2015 00:14:33 +0300</pubDate>
+      
+      <guid>http://vort3x.me/sailsjs-heroku/</guid>
+      <description>
+
+&lt;p&gt;How to deploy your &lt;a href=&#34;http://sailsjs.org&#34;&gt;Sails.js&lt;/a&gt; application to &lt;a href=&#34;http://www.heroku.com&#34;&gt;Heroku&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://vort3x.me/images/sailsjs-logo.png&#34; alt=&#34;Sailsjs logo&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;First of all &lt;strong&gt;What is Sails.js&lt;/strong&gt;? Per &lt;a href=&#34;sailsjs.org&#34;&gt;sailsjs.org&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Sails makes it easy to build custom, enterprise-grade Node.js apps. It is designed to emulate the familiar MVC pattern of frameworks like Ruby on Rails, but with support for the requirements of modern apps: data-driven APIs with a scalable, service-oriented architecture. It&amp;rsquo;s especially good for building chat, realtime dashboards, or multiplayer games; but you can use it for any web application project - top to bottom.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;You can find more detailed information on how to create Sails.js application on their website: &lt;a href=&#34;http://sailsjs.org/#!/getStarted&#34;&gt;http://sailsjs.org/#!/getStarted&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://vort3x.me/images/heroku-logo.jpg&#34; alt=&#34;Heroku logo&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Heroku is a cloud platform as a service (PaaS). Heroku can build, deploy and run your Ruby, Node.js, Python, Java and PHP applications and it&amp;rsquo;s great platform for production and development environments.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&#34;sails-js-deployment-to-heroku:84f037857462908ea61d6cb53e9c1a45&#34;&gt;Sails.js deployment to Heroku&lt;/h1&gt;
+
+&lt;p&gt;We will need to create Heroku application first, then configure Sails.js application and deploy it from command shell using Git.&lt;/p&gt;
+
+&lt;h2 id=&#34;prerequisites:84f037857462908ea61d6cb53e9c1a45&#34;&gt;Prerequisites:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Sails.js application&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://git-scm.com&#34;&gt;Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://signup.heroku.com/login&#34;&gt;Heroku account&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://toolbelt.heroku.com&#34;&gt;Heroku Toolbelt&lt;/a&gt; installed (CLI tool for creating and managing Heroku apps)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;create-heroku-application:84f037857462908ea61d6cb53e9c1a45&#34;&gt;Create Heroku application&lt;/h2&gt;
+
+&lt;p&gt;First, you need to login into Heroku from your command shell&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ heroku login
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You&amp;rsquo;ll need to enter you email address and password.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Enter your Heroku credentials.
+Email: user@email.com
+Password (typing will be hidden):
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Create Heroku application:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ heroku create name-of-the-app-on-heroku
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Next, create Procfile in your Sails.js application&amp;rsquo;s folder.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ cd path/to/sailjs-project
+$ touch Procfile
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now open Procfile with your text editor (or vim/nano) and add &lt;code&gt;web: npm start&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;In your Sails.js application you should have &lt;code&gt;package.json&lt;/code&gt; file, open it and find scripts block then set start value with &lt;code&gt;sails lift&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;&amp;quot;scripts&amp;quot;: {
+  &amp;quot;start&amp;quot;: &amp;quot;sails lift&amp;quot;,
+  &amp;quot;debug&amp;quot;: &amp;quot;node debug app.js&amp;quot;
+},
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Create a new Git repository in your Sails.js application&amp;rsquo;s directory:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ git init
+$ heroku git:remote -a name-of-the-app-on-heroku
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Commit your code to the repository and deploy it:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ git add .
+$ git commit -m &amp;quot;Added my Sails.js project&amp;quot;
+$ git push heroku master
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You should wait until you get this message:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;remote: -----&amp;gt; Launching... done, v3
+remote:        https://name-of-the-app-on-heroku.herokuapp.com/ deployed to Heroku
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Congratulations! Now you can check your application by this URL: &lt;code&gt;https://name-of-the-app-on-heroku.herokuapp.com&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;To re-deploy your application, you&amp;rsquo;ll need to commit your changes and push to Heroku:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ cd path/to/sailjs-project
+$ git add .
+$ git commit -m &amp;quot;New changes&amp;quot;
+$ git push heroku master
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Feel free to ask me any questions in the comments below.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
