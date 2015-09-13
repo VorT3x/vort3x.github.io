@@ -7,7 +7,7 @@
 		<meta name="author" content="Dmitri Logvinenko">
 		<meta name="description" content="Thoughts, stories and ideas">
 		<meta name="generator" content="Hugo 0.14" />
-		<title>Powered by Ghost &middot; VorT3x&#39;s Blog</title>
+		<title>Github Pages &#43; Hugo = Love &middot; VorT3x&#39;s Blog</title>
 		<link rel="shortcut icon" href="http://vort3x.me/images/favicon.ico">
 		<link rel="stylesheet" href="http://vort3x.me/css/style.css">
 		<link rel="stylesheet" href="http://vort3x.me/css/highlight.css">
@@ -32,19 +32,54 @@
         <section id="wrapper">
             <article class="post">
                 <header>
-                    <h1>Powered by Ghost</h1>
-                    <h2 class="headline">May 16, 2015</h2>
+                    <h1>Github Pages &#43; Hugo = Love</h1>
+                    <h2 class="headline">September 13, 2015</h2>
                 </header>
                 <section id="post-body">
-                    <p><img src="/images/ghost-logo.png" alt="The Ghost Logo" /></p>
+                    <p>I was aware of <a href="http://jekyllrb.com">Jekyll</a> and <a href="https://pages.github.com">Github Pages</a> long time ago, but I didn&rsquo;t want to have Ruby environment to generate my blog, so I&rsquo;ve ended up with <a href="https://ghost.org">Ghost</a> blog on <a href="https://www.digitalocean.com">DigitalOcean</a>.</p>
 
-<p><strong>Hello World!</strong></p>
+<p>Few months ago when I was on vacation I started to learn Golang:</p>
 
-<p>I wanted to start blogging years ago and it&rsquo;s time to start. I&rsquo;ve chosen <a href="https://ghost.org">Ghost</a> for my blog, hosted it on <a href="https://www.digitalocean.com/?refcode=6f84941d4d97">DigitalOcean</a> and bought template made by <a href="http://ecko.me">EckoThemes</a> from <a href="http://themeforest.net/?ref=VorT3x">ThemeForest</a>.</p>
+<p><blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Let the vacation begin! <a href="https://twitter.com/hashtag/golang?src=hash">#golang</a> <a href="https://twitter.com/golang">@golang</a> <a href="http://t.co/LqAXc3g5ot">pic.twitter.com/LqAXc3g5ot</a></p>&mdash; Dmitri Logvinenko (@VorT3x) <a href="https://twitter.com/VorT3x/status/612938326140715008">June 22, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
 
-<p>Mostly I&rsquo;ll write technical articles. Currently I feel real passion to <a href="https://nodejs.org">Node.js</a> and want to dig it further, that&rsquo;s one of the reasons why I&rsquo;ve chosen <a href="https://ghost.org">Ghost</a> for blogging, since it&rsquo;s built on Node.js. I really like how simple it&rsquo;s comparable to <a href="https://wordpress.org">Wordpress</a> and it uses Markdown syntax for posts, which is also pleasant to use.</p>
+<p>And of course I found <a href="http://gohugo.io">Hugo</a>. But I was busy and had no time for my blog until now.</p>
 
-<p>Stay tuned!</p>
+<p>So, what&rsquo;s Hugo? Per <a href="http://gohugo.io">gohugo.io</a>:</p>
+
+<blockquote>
+<p>Hugo is a general-purpose website framework. Technically speaking, Hugo is a static site generator. This means that, unlike systems like WordPress, Ghost and Drupal, which run on your web server expensively building a page every time a visitor requests one, Hugo does the building when you create your content. Since websites are viewed far more often than they are edited, Hugo is optimized for website viewing while providing a great writing experience.</p>
+</blockquote>
+
+<p>And since it&rsquo;s static site you can host it on Github Pages (<strong>for free!</strong>). And the most important is that you don&rsquo;t need to maintain server/web application yourself, any change to your blog is just a commit to repository using Git. But previously I had to update Ghost theme, Ghost version manually using FTP.</p>
+
+<p>It took me one evening to migrate from Ghost to Hugo, the main problem for me was to choose theme or create my own :) Current theme I use called <a href="https://github.com/digitalcraftsman/hugo-cactus-theme">Cactus</a> and it&rsquo;s open source.</p>
+
+<p>But now It&rsquo;s a matter of a commit to change/add anything on the blog. I use this script to deploy my changes:</p>
+
+<pre><code class="language-bash">#!/bin/bash
+cd vort3x-blog-hugo
+
+# Build the project.
+hugo
+
+cd public
+
+git add -A
+
+# Commit changes.
+msg=&quot;rebuilding site `date`&quot;
+if [ $# -eq 1 ]
+  then msg=&quot;$1&quot;
+fi
+git commit -m &quot;$msg&quot;
+
+# Push source and build repos.
+git push origin master
+</code></pre>
+
+<p>I want to thank Steve Francia (<a href="http://spf13.com">spf13</a>), the creator of Hugo and all <a href="https://github.com/spf13/hugo/graphs/contributors">contributors on Github</a> (208+ at the time of this writing)! Great job!</p>
+
+<p>Feel free to ask me any questions in the comments below.</p>
 
                 </section>
             </article>
@@ -57,7 +92,7 @@
                         </div>
                     </a>
                 <section id="sharing">
-                    <a class="twitter" href="https://twitter.com/intent/tweet?text=http://vort3x.me/http%3a%2f%2fvort3x.me%2fpowered-by-ghost%2f - Powered%20by%20Ghost by @VorT3x" target="_blank"><span class="icon-twitter"> Tweet</span></a>
+                    <a class="twitter" href="https://twitter.com/intent/tweet?text=http://vort3x.me/http%3a%2f%2fvort3x.me%2fmoved-to-hugo%2f - Github%20Pages%20%2b%20Hugo%20%3d%20Love by @VorT3x" target="_blank"><span class="icon-twitter"> Tweet</span></a>
 
 <a class="facebook" href="#" onclick="
     window.open(
@@ -92,10 +127,6 @@
     
     
         
-        <li>
-            <a href="http://vort3x.me/moved-to-hugo/">Github Pages &#43; Hugo = Love<aside class="dates">Sep 13</aside></a>
-        </li>
-        
    
     
         
@@ -112,6 +143,10 @@
         
    
     
+        
+        <li>
+            <a href="http://vort3x.me/powered-by-ghost/">Powered by Ghost<aside class="dates">May 16</aside></a>
+        </li>
         
    
     
