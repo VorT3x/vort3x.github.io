@@ -6,13 +6,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="author" content="Dmitri Logvinenko">
 		<meta name="description" content="Thoughts, stories and ideas">
-		<meta name="generator" content="Hugo 0.15-DEV" />
+		<meta name="generator" content="Hugo 0.15" />
 		<title>ASP.NET 5 MVC on OS X &middot; VorT3x&#39;s Blog</title>
 		<link rel="shortcut icon" href="http://vort3x.me/images/favicon.ico">
 		<link rel="stylesheet" href="http://vort3x.me/css/style.css">
 		<link rel="stylesheet" href="http://vort3x.me/css/highlight.css">
+		<link rel="stylesheet" href="http://vort3x.me/css/monosocialiconsfont.css">
+		
 		<link href="http://vort3x.me/index.xml" rel="alternate" type="application/rss+xml" title="VorT3x&#39;s Blog" />
+		
 	</head>
+
     <body>
        <nav class="main-nav">
 	
@@ -25,7 +29,7 @@
 	
 
 	
-	<a class="cta" href="">Subscribe</a>
+	<a class="cta" href="http://vort3x.me/index.xml">Subscribe</a>
 	
 </nav>
 
@@ -137,11 +141,11 @@ Add <code>export MONO_MANAGED_WATCHER=false</code> to your /.bash_profile, ~/.ba
                         <img class="avatar" src="http://vort3x.me/images/avatar.png">
                         <div>
                             <span class="dark">Dmitri Logvinenko</span>
-                            <span>Software developer who&#39;s passionate about writing code and learning new technologies. Currently concentrated on Go. Professionally works as Senior Software Developer (.NET stack).</span>
+                            <span>Software developer who&#39;s passionate about writing code and learning new technologies. Currently concentrated on Go. Professionally works as Technical Lead.</span>
                         </div>
                     </a>
                 <section id="sharing">
-                    <a class="twitter" href="https://twitter.com/intent/tweet?text=http://vort3x.me/http%3a%2f%2fvort3x.me%2fasp-net-5-mvc-on-os-x%2f - ASP.NET%205%20MVC%20on%20OS%20X by @VorT3x" target="_blank"><span class="icon-twitter"> Tweet</span></a>
+                    <a class="twitter" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fvort3x.me%2fasp-net-5-mvc-on-os-x%2f - ASP.NET%205%20MVC%20on%20OS%20X by @VorT3x"><span class="icon-twitter"> Tweet</span></a>
 
 <a class="facebook" href="#" onclick="
     window.open(
@@ -154,22 +158,21 @@ Add <code>export MONO_MANAGED_WATCHER=false</code> to your /.bash_profile, ~/.ba
                 </section>
             </footer>
 
-            
-                <section class="disqus">
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        var disqus_shortname = 'VorT3x';
-        var disqus_developer = 0; 
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="//disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</section>
-            
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'VorT3x';
+    var disqus_identifier = 'http:\/\/vort3x.me\/asp-net-5-mvc-on-os-x\/';
+    var disqus_title = 'ASP.NET 5 MVC on OS X';
+    var disqus_url = 'http:\/\/vort3x.me\/asp-net-5-mvc-on-os-x\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
             <ul id="post-list" class="archive readmore">
     <h3>Read more</h3>
@@ -182,6 +185,10 @@ Add <code>export MONO_MANAGED_WATCHER=false</code> to your /.bash_profile, ~/.ba
         
    
     
+        
+        <li>
+            <a href="http://vort3x.me/asp-net-5-mvc-on-os-x/">ASP.NET 5 MVC on OS X<aside class="dates">Jun 28</aside></a>
+        </li>
         
    
     
@@ -203,10 +210,14 @@ Add <code>export MONO_MANAGED_WATCHER=false</code> to your /.bash_profile, ~/.ba
    
 </ul>
             <footer id="footer">
+    
     <p class="small">
+    
         © Copyright 2016 Dmitri Logvinenko
+    
     </p>
 </footer>
+
         </section>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -214,14 +225,16 @@ Add <code>export MONO_MANAGED_WATCHER=false</code> to your /.bash_profile, ~/.ba
 <script src="http://vort3x.me/js/highlight.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
-
-<!-- Google Analytics -->
 <script>
-  var _gaq=[['_setAccount','UA-62813262-1'],['_trackPageview']];
-  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-  s.parentNode.insertBefore(g,s)}(document,'script'));
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-62813262-1', 'auto');
+ga('send', 'pageview');
 </script>
+
 
     </body>
 </html>
