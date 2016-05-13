@@ -35,11 +35,11 @@
 
 &lt;hr /&gt;
 
-&lt;h1 id=&#34;sails-js-deployment-to-heroku:84f037857462908ea61d6cb53e9c1a45&#34;&gt;Sails.js deployment to Heroku&lt;/h1&gt;
+&lt;h1 id=&#34;sails-js-deployment-to-heroku&#34;&gt;Sails.js deployment to Heroku&lt;/h1&gt;
 
 &lt;p&gt;We will need to create Heroku application first, then configure Sails.js application and deploy it from command shell using Git.&lt;/p&gt;
 
-&lt;h2 id=&#34;prerequisites:84f037857462908ea61d6cb53e9c1a45&#34;&gt;Prerequisites:&lt;/h2&gt;
+&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites:&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Sails.js application&lt;/li&gt;
@@ -48,7 +48,7 @@
 &lt;li&gt;&lt;a href=&#34;https://toolbelt.heroku.com&#34;&gt;Heroku Toolbelt&lt;/a&gt; installed (CLI tool for creating and managing Heroku apps)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;create-heroku-application:84f037857462908ea61d6cb53e9c1a45&#34;&gt;Create Heroku application&lt;/h2&gt;
+&lt;h2 id=&#34;create-heroku-application&#34;&gt;Create Heroku application&lt;/h2&gt;
 
 &lt;p&gt;First, you need to login into Heroku from your command shell&lt;/p&gt;
 

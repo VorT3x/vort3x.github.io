@@ -6,12 +6,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="author" content="Dmitri Logvinenko">
 		<meta name="description" content="Thoughts, stories and ideas">
-		<meta name="generator" content="Hugo 0.15" />
+		<meta name="generator" content="Hugo 0.16-DEV" />
 		<title>ASP.NET 5 MVC on OS X &middot; VorT3x&#39;s Blog</title>
 		<link rel="shortcut icon" href="https://vort3x.me/images/favicon.ico">
 		<link rel="stylesheet" href="https://vort3x.me/css/style.css">
 		<link rel="stylesheet" href="https://vort3x.me/css/highlight.css">
+		
+
+		
 		<link rel="stylesheet" href="https://vort3x.me/css/monosocialiconsfont.css">
+		
+
 		
 		<link href="https://vort3x.me/index.xml" rel="alternate" type="application/rss+xml" title="VorT3x&#39;s Blog" />
 		
@@ -37,7 +42,21 @@
             <article class="post">
                 <header>
                     <h1>ASP.NET 5 MVC on OS X</h1>
-                    <h2 class="headline">June 28, 2015</h2>
+                    <h2 class="headline">
+                    June 28, 2015 
+                    <br>
+                    
+                    
+                        
+                            <a href="https://vort3x.me/tags/dotnet">DOTNET</a>
+                        
+                            <a href="https://vort3x.me/tags/aspnet">ASPNET</a>
+                        
+                            <a href="https://vort3x.me/tags/osx">OSX</a>
+                        
+                    
+                    
+                    </h2>
                 </header>
                 <section id="post-body">
                     
@@ -56,12 +75,12 @@
 <li>Run it</li>
 </ol>
 
-<h1 id="install-homebrew:f8ccd96f531d3bc91ef0d73c8d7f022e">Install Homebrew</h1>
+<h1 id="install-homebrew">Install Homebrew</h1>
 
 <pre><code class="language-ruby">$ ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
 </code></pre>
 
-<h1 id="install-asp-net-5-on-os-x:f8ccd96f531d3bc91ef0d73c8d7f022e">Install ASP.NET 5 on OS X</h1>
+<h1 id="install-asp-net-5-on-os-x">Install ASP.NET 5 on OS X</h1>
 
 <pre><code>$ brew tap aspnet/dnx
 $ brew install dnvm
@@ -69,7 +88,7 @@ $ brew install dnvm
 
 <p>Now add <code>source dnvm.sh</code> to your /.bash_profile, ~/.bashrc or ~/.zshrc at the end of file</p>
 
-<h1 id="generate-asp-net-mvc-project:f8ccd96f531d3bc91ef0d73c8d7f022e">Generate ASP.NET MVC project</h1>
+<h1 id="generate-asp-net-mvc-project">Generate ASP.NET MVC project</h1>
 
 <p>Install <a href="https://nodejs.org">Node.js</a> if you still don&rsquo;t have it</p>
 
@@ -89,7 +108,7 @@ $ npm install -g generator-aspnet
 
 <p>Specify app name and select <code>Web application</code></p>
 
-<h1 id="build-web-application:f8ccd96f531d3bc91ef0d73c8d7f022e">Build web application</h1>
+<h1 id="build-web-application">Build web application</h1>
 
 <p>ASP.NET 5 uses <a href="http://bower.io">Bower</a> package manager</p>
 
@@ -106,7 +125,7 @@ $ npm install -g generator-aspnet
 <pre><code>$ dnu build
 </code></pre>
 
-<h1 id="run-it:f8ccd96f531d3bc91ef0d73c8d7f022e">Run it</h1>
+<h1 id="run-it">Run it</h1>
 
 <p>On OS X it&rsquo;s possible to run ASP.NET application using <a href="https://github.com/aspnet/KestrelHttpServer">Kestrel</a></p>
 
@@ -160,7 +179,7 @@ Add <code>export MONO_MANAGED_WATCHER=false</code> to your /.bash_profile, ~/.ba
 
             <div id="disqus_thread"></div>
 <script type="text/javascript">
-    var disqus_shortname = 'VorT3x';
+    var disqus_shortname = '\/\/VorT3x';
     var disqus_identifier = 'https:\/\/vort3x.me\/asp-net-5-mvc-on-os-x\/';
     var disqus_title = 'ASP.NET 5 MVC on OS X';
     var disqus_url = 'https:\/\/vort3x.me\/asp-net-5-mvc-on-os-x\/';
@@ -224,6 +243,9 @@ Add <code>export MONO_MANAGED_WATCHER=false</code> to your /.bash_profile, ~/.ba
 <script src="https://vort3x.me/js/main.js"></script>
 <script src="https://vort3x.me/js/highlight.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
+
+
+
 
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

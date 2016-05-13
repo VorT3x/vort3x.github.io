@@ -84,12 +84,12 @@ git push origin master
 &lt;li&gt;Run it&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&#34;install-homebrew:f8ccd96f531d3bc91ef0d73c8d7f022e&#34;&gt;Install Homebrew&lt;/h1&gt;
+&lt;h1 id=&#34;install-homebrew&#34;&gt;Install Homebrew&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;$ ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;install-asp-net-5-on-os-x:f8ccd96f531d3bc91ef0d73c8d7f022e&#34;&gt;Install ASP.NET 5 on OS X&lt;/h1&gt;
+&lt;h1 id=&#34;install-asp-net-5-on-os-x&#34;&gt;Install ASP.NET 5 on OS X&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code&gt;$ brew tap aspnet/dnx
 $ brew install dnvm
@@ -97,7 +97,7 @@ $ brew install dnvm
 
 &lt;p&gt;Now add &lt;code&gt;source dnvm.sh&lt;/code&gt; to your /.bash_profile, ~/.bashrc or ~/.zshrc at the end of file&lt;/p&gt;
 
-&lt;h1 id=&#34;generate-asp-net-mvc-project:f8ccd96f531d3bc91ef0d73c8d7f022e&#34;&gt;Generate ASP.NET MVC project&lt;/h1&gt;
+&lt;h1 id=&#34;generate-asp-net-mvc-project&#34;&gt;Generate ASP.NET MVC project&lt;/h1&gt;
 
 &lt;p&gt;Install &lt;a href=&#34;https://nodejs.org&#34;&gt;Node.js&lt;/a&gt; if you still don&amp;rsquo;t have it&lt;/p&gt;
 
@@ -117,7 +117,7 @@ $ npm install -g generator-aspnet
 
 &lt;p&gt;Specify app name and select &lt;code&gt;Web application&lt;/code&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;build-web-application:f8ccd96f531d3bc91ef0d73c8d7f022e&#34;&gt;Build web application&lt;/h1&gt;
+&lt;h1 id=&#34;build-web-application&#34;&gt;Build web application&lt;/h1&gt;
 
 &lt;p&gt;ASP.NET 5 uses &lt;a href=&#34;http://bower.io&#34;&gt;Bower&lt;/a&gt; package manager&lt;/p&gt;
 
@@ -134,7 +134,7 @@ $ npm install -g generator-aspnet
 &lt;pre&gt;&lt;code&gt;$ dnu build
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;run-it:f8ccd96f531d3bc91ef0d73c8d7f022e&#34;&gt;Run it&lt;/h1&gt;
+&lt;h1 id=&#34;run-it&#34;&gt;Run it&lt;/h1&gt;
 
 &lt;p&gt;On OS X it&amp;rsquo;s possible to run ASP.NET application using &lt;a href=&#34;https://github.com/aspnet/KestrelHttpServer&#34;&gt;Kestrel&lt;/a&gt;&lt;/p&gt;
 
@@ -190,11 +190,11 @@ Add &lt;code&gt;export MONO_MANAGED_WATCHER=false&lt;/code&gt; to your /.bash_pr
 
 &lt;hr /&gt;
 
-&lt;h1 id=&#34;sails-js-deployment-to-heroku:84f037857462908ea61d6cb53e9c1a45&#34;&gt;Sails.js deployment to Heroku&lt;/h1&gt;
+&lt;h1 id=&#34;sails-js-deployment-to-heroku&#34;&gt;Sails.js deployment to Heroku&lt;/h1&gt;
 
 &lt;p&gt;We will need to create Heroku application first, then configure Sails.js application and deploy it from command shell using Git.&lt;/p&gt;
 
-&lt;h2 id=&#34;prerequisites:84f037857462908ea61d6cb53e9c1a45&#34;&gt;Prerequisites:&lt;/h2&gt;
+&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites:&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Sails.js application&lt;/li&gt;
@@ -203,7 +203,7 @@ Add &lt;code&gt;export MONO_MANAGED_WATCHER=false&lt;/code&gt; to your /.bash_pr
 &lt;li&gt;&lt;a href=&#34;https://toolbelt.heroku.com&#34;&gt;Heroku Toolbelt&lt;/a&gt; installed (CLI tool for creating and managing Heroku apps)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;create-heroku-application:84f037857462908ea61d6cb53e9c1a45&#34;&gt;Create Heroku application&lt;/h2&gt;
+&lt;h2 id=&#34;create-heroku-application&#34;&gt;Create Heroku application&lt;/h2&gt;
 
 &lt;p&gt;First, you need to login into Heroku from your command shell&lt;/p&gt;
 
