@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on VorT3x&#39;s Blog</title>
-    <link>http://vort3x.me/post/</link>
+    <link>https://vort3x.me/post/</link>
     <description>Recent content in Posts on VorT3x&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 13 Sep 2015 19:03:00 +0300</lastBuildDate>
-    <atom:link href="http://vort3x.me/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vort3x.me/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Github Pages &#43; Hugo = Love</title>
-      <link>http://vort3x.me/moved-to-hugo/</link>
+      <link>https://vort3x.me/moved-to-hugo/</link>
       <pubDate>Sun, 13 Sep 2015 19:03:00 +0300</pubDate>
       
-      <guid>http://vort3x.me/moved-to-hugo/</guid>
+      <guid>https://vort3x.me/moved-to-hugo/</guid>
       <description>&lt;p&gt;I was aware of &lt;a href=&#34;http://jekyllrb.com&#34;&gt;Jekyll&lt;/a&gt; and &lt;a href=&#34;https://pages.github.com&#34;&gt;Github Pages&lt;/a&gt; long time ago, but I didn&amp;rsquo;t want to have Ruby environment to generate my blog, so I&amp;rsquo;ve ended up with &lt;a href=&#34;https://ghost.org&#34;&gt;Ghost&lt;/a&gt; blog on &lt;a href=&#34;https://www.digitalocean.com&#34;&gt;DigitalOcean&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Few months ago when I was on vacation I started to learn Golang:&lt;/p&gt;
@@ -64,15 +64,15 @@ git push origin master
     
     <item>
       <title>ASP.NET 5 MVC on OS X</title>
-      <link>http://vort3x.me/asp-net-5-mvc-on-os-x/</link>
+      <link>https://vort3x.me/asp-net-5-mvc-on-os-x/</link>
       <pubDate>Sun, 28 Jun 2015 19:18:08 +0300</pubDate>
       
-      <guid>http://vort3x.me/asp-net-5-mvc-on-os-x/</guid>
+      <guid>https://vort3x.me/asp-net-5-mvc-on-os-x/</guid>
       <description>
 
 &lt;p&gt;&lt;strong&gt;How to create, build and run &lt;a href=&#34;http://www.asp.net/mvc/mvc5&#34;&gt;ASP.NET 5 MVC&lt;/a&gt; web application on OS X&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://vort3x.me/images/visual-studio-code.png&#34; alt=&#34;Visual Studio Code&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://vort3x.me/images/visual-studio-code.png&#34; alt=&#34;Visual Studio Code&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Plan:&lt;/p&gt;
 
@@ -158,7 +158,7 @@ Add &lt;code&gt;export MONO_MANAGED_WATCHER=false&lt;/code&gt; to your /.bash_pr
 &lt;p&gt;Re-run application &lt;code&gt;$ dnx . kestrel&lt;/code&gt; and refresh page&lt;/p&gt;
 
 &lt;p&gt;Congratulations!
-&lt;img src=&#34;http://vort3x.me/images/aspnet5-osx.png&#34; alt=&#34;ASP.NET 5 Web application on OS X&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://vort3x.me/images/aspnet5-osx.png&#34; alt=&#34;ASP.NET 5 Web application on OS X&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Feel free to ask me any questions in the comments below.&lt;/p&gt;
 </description>
@@ -166,15 +166,15 @@ Add &lt;code&gt;export MONO_MANAGED_WATCHER=false&lt;/code&gt; to your /.bash_pr
     
     <item>
       <title>Sails.js on Heroku</title>
-      <link>http://vort3x.me/sailsjs-heroku/</link>
+      <link>https://vort3x.me/sailsjs-heroku/</link>
       <pubDate>Tue, 19 May 2015 00:14:33 +0300</pubDate>
       
-      <guid>http://vort3x.me/sailsjs-heroku/</guid>
+      <guid>https://vort3x.me/sailsjs-heroku/</guid>
       <description>
 
 &lt;p&gt;How to deploy your &lt;a href=&#34;http://sailsjs.org&#34;&gt;Sails.js&lt;/a&gt; application to &lt;a href=&#34;http://www.heroku.com&#34;&gt;Heroku&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://vort3x.me/images/sailsjs-logo.png&#34; alt=&#34;Sailsjs logo&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://vort3x.me/images/sailsjs-logo.png&#34; alt=&#34;Sailsjs logo&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;First of all &lt;strong&gt;What is Sails.js&lt;/strong&gt;? Per &lt;a href=&#34;sailsjs.org&#34;&gt;sailsjs.org&lt;/a&gt;:&lt;/p&gt;
 
@@ -184,7 +184,7 @@ Add &lt;code&gt;export MONO_MANAGED_WATCHER=false&lt;/code&gt; to your /.bash_pr
 
 &lt;p&gt;You can find more detailed information on how to create Sails.js application on their website: &lt;a href=&#34;http://sailsjs.org/#!/getStarted&#34;&gt;http://sailsjs.org/#!/getStarted&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://vort3x.me/images/heroku-logo.jpg&#34; alt=&#34;Heroku logo&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://vort3x.me/images/heroku-logo.jpg&#34; alt=&#34;Heroku logo&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Heroku is a cloud platform as a service (PaaS). Heroku can build, deploy and run your Ruby, Node.js, Python, Java and PHP applications and it&amp;rsquo;s great platform for production and development environments.&lt;/p&gt;
 
@@ -273,11 +273,11 @@ $ git push heroku master
     
     <item>
       <title>Powered by Ghost</title>
-      <link>http://vort3x.me/powered-by-ghost/</link>
+      <link>https://vort3x.me/powered-by-ghost/</link>
       <pubDate>Sat, 16 May 2015 00:23:08 +0300</pubDate>
       
-      <guid>http://vort3x.me/powered-by-ghost/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://vort3x.me/images/ghost-logo.png&#34; alt=&#34;The Ghost Logo&#34; /&gt;&lt;/p&gt;
+      <guid>https://vort3x.me/powered-by-ghost/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://vort3x.me/images/ghost-logo.png&#34; alt=&#34;The Ghost Logo&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Hello World!&lt;/strong&gt;&lt;/p&gt;
 

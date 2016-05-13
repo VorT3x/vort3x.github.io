@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sailsjs on VorT3x&#39;s Blog</title>
-    <link>http://vort3x.me/tags/sailsjs/</link>
+    <link>https://vort3x.me/tags/sailsjs/</link>
     <description>Recent content in Sailsjs on VorT3x&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 19 May 2015 00:14:33 +0300</lastBuildDate>
-    <atom:link href="http://vort3x.me/tags/sailsjs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vort3x.me/tags/sailsjs/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Sails.js on Heroku</title>
-      <link>http://vort3x.me/sailsjs-heroku/</link>
+      <link>https://vort3x.me/sailsjs-heroku/</link>
       <pubDate>Tue, 19 May 2015 00:14:33 +0300</pubDate>
       
-      <guid>http://vort3x.me/sailsjs-heroku/</guid>
+      <guid>https://vort3x.me/sailsjs-heroku/</guid>
       <description>
 
 &lt;p&gt;How to deploy your &lt;a href=&#34;http://sailsjs.org&#34;&gt;Sails.js&lt;/a&gt; application to &lt;a href=&#34;http://www.heroku.com&#34;&gt;Heroku&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://vort3x.me/images/sailsjs-logo.png&#34; alt=&#34;Sailsjs logo&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://vort3x.me/images/sailsjs-logo.png&#34; alt=&#34;Sailsjs logo&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;First of all &lt;strong&gt;What is Sails.js&lt;/strong&gt;? Per &lt;a href=&#34;sailsjs.org&#34;&gt;sailsjs.org&lt;/a&gt;:&lt;/p&gt;
 
@@ -29,7 +29,7 @@
 
 &lt;p&gt;You can find more detailed information on how to create Sails.js application on their website: &lt;a href=&#34;http://sailsjs.org/#!/getStarted&#34;&gt;http://sailsjs.org/#!/getStarted&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://vort3x.me/images/heroku-logo.jpg&#34; alt=&#34;Heroku logo&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://vort3x.me/images/heroku-logo.jpg&#34; alt=&#34;Heroku logo&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Heroku is a cloud platform as a service (PaaS). Heroku can build, deploy and run your Ruby, Node.js, Python, Java and PHP applications and it&amp;rsquo;s great platform for production and development environments.&lt;/p&gt;
 

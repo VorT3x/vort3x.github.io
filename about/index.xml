@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Abouts on VorT3x&#39;s Blog</title>
-    <link>http://vort3x.me/about/</link>
+    <link>https://vort3x.me/about/</link>
     <description>Recent content in Abouts on VorT3x&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 05 Aug 1991 19:18:08 +0300</lastBuildDate>
-    <atom:link href="http://vort3x.me/about/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vort3x.me/about/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>About me</title>
-      <link>http://vort3x.me/about/</link>
+      <link>https://vort3x.me/about/</link>
       <pubDate>Mon, 05 Aug 1991 19:18:08 +0300</pubDate>
       
-      <guid>http://vort3x.me/about/</guid>
+      <guid>https://vort3x.me/about/</guid>
       <description>&lt;p&gt;Software developer who&amp;rsquo;s passionate about writing code and learning new technologies. Currently concentrated on Go. Professionally works as Technical Lead.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.linkedin.com/pub/dmitri-logvinenko/35/2a1/1a1&#34; target=&#34;_blank&#34;&gt;LinkedIn&lt;/a&gt;
