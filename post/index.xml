@@ -7,286 +7,54 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 13 Sep 2015 19:03:00 +0300</lastBuildDate>
-    <atom:link href="https://vort3x.me/post/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://vort3x.me/post/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Github Pages &#43; Hugo = Love</title>
-      <link>https://vort3x.me/moved-to-hugo/</link>
+      <link>https://vort3x.me/post/moved-to-hugo/</link>
       <pubDate>Sun, 13 Sep 2015 19:03:00 +0300</pubDate>
       
-      <guid>https://vort3x.me/moved-to-hugo/</guid>
-      <description>&lt;p&gt;I was aware of &lt;a href=&#34;http://jekyllrb.com&#34;&gt;Jekyll&lt;/a&gt; and &lt;a href=&#34;https://pages.github.com&#34;&gt;Github Pages&lt;/a&gt; long time ago, but I didn&amp;rsquo;t want to have Ruby environment to generate my blog, so I&amp;rsquo;ve ended up with &lt;a href=&#34;https://ghost.org&#34;&gt;Ghost&lt;/a&gt; blog on &lt;a href=&#34;https://www.digitalocean.com&#34;&gt;DigitalOcean&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Few months ago when I was on vacation I started to learn Golang:&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Let the vacation begin! &lt;a href=&#34;https://twitter.com/hashtag/golang?src=hash&#34;&gt;#golang&lt;/a&gt; &lt;a href=&#34;https://twitter.com/golang&#34;&gt;@golang&lt;/a&gt; &lt;a href=&#34;http://t.co/LqAXc3g5ot&#34;&gt;pic.twitter.com/LqAXc3g5ot&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dmitri Logvinenko (@VorT3x) &lt;a href=&#34;https://twitter.com/VorT3x/status/612938326140715008&#34;&gt;June 22, 2015&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;And of course I found &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;. But I was busy and had no time for my blog until now.&lt;/p&gt;
-
-&lt;p&gt;So, what&amp;rsquo;s Hugo? Per &lt;a href=&#34;http://gohugo.io&#34;&gt;gohugo.io&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Hugo is a general-purpose website framework. Technically speaking, Hugo is a static site generator. This means that, unlike systems like WordPress, Ghost and Drupal, which run on your web server expensively building a page every time a visitor requests one, Hugo does the building when you create your content. Since websites are viewed far more often than they are edited, Hugo is optimized for website viewing while providing a great writing experience.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;And since it&amp;rsquo;s static site you can host it on Github Pages (&lt;strong&gt;for free!&lt;/strong&gt;). And the most important is that you don&amp;rsquo;t need to maintain server/web application yourself, any change to your blog is just a commit to repository using Git. But previously I had to update Ghost theme, Ghost version manually using FTP.&lt;/p&gt;
-
-&lt;p&gt;It took me one evening to migrate from Ghost to Hugo, the main problem for me was to choose theme or create my own :) Current theme I use called &lt;a href=&#34;https://github.com/digitalcraftsman/hugo-cactus-theme&#34;&gt;Cactus&lt;/a&gt; and it&amp;rsquo;s open source.&lt;/p&gt;
-
-&lt;p&gt;But now It&amp;rsquo;s a matter of a commit to change/add anything on the blog. I use this script to deploy my changes:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#!/bin/bash
-cd vort3x-blog-hugo
-
-# Build the project.
-hugo
-
-cd public
-
-git add -A
-
-# Commit changes.
-msg=&amp;quot;rebuilding site `date`&amp;quot;
-if [ $# -eq 1 ]
-  then msg=&amp;quot;$1&amp;quot;
-fi
-git commit -m &amp;quot;$msg&amp;quot;
-
-# Push source and build repos.
-git push origin master
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I want to thank Steve Francia (&lt;a href=&#34;http://spf13.com&#34;&gt;spf13&lt;/a&gt;), the creator of Hugo and all &lt;a href=&#34;https://github.com/spf13/hugo/graphs/contributors&#34;&gt;contributors on Github&lt;/a&gt; (208+ at the time of this writing)! Great job!&lt;/p&gt;
-
-&lt;p&gt;Feel free to ask me any questions in the comments below.&lt;/p&gt;
-</description>
+      <guid>https://vort3x.me/post/moved-to-hugo/</guid>
+      <description>I was aware of Jekyll and Github Pages long time ago, but I didn&amp;rsquo;t want to have Ruby environment to generate my blog, so I&amp;rsquo;ve ended up with Ghost blog on DigitalOcean.
+Few months ago when I was on vacation I started to learn Golang:
+Let the vacation begin! #golang @golang pic.twitter.com/LqAXc3g5ot
+&amp;mdash; Dmitri Logvinenko (@VorT3x) June 22, 2015 
+And of course I found Hugo. But I was busy and had no time for my blog until now.</description>
     </item>
     
     <item>
       <title>ASP.NET 5 MVC on OS X</title>
-      <link>https://vort3x.me/asp-net-5-mvc-on-os-x/</link>
+      <link>https://vort3x.me/post/asp-net-5-mvc-on-os-x/</link>
       <pubDate>Sun, 28 Jun 2015 19:18:08 +0300</pubDate>
       
-      <guid>https://vort3x.me/asp-net-5-mvc-on-os-x/</guid>
-      <description>
-
-&lt;p&gt;&lt;strong&gt;How to create, build and run &lt;a href=&#34;http://www.asp.net/mvc/mvc5&#34;&gt;ASP.NET 5 MVC&lt;/a&gt; web application on OS X&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://vort3x.me/images/visual-studio-code.png&#34; alt=&#34;Visual Studio Code&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Plan:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Install homebrew&lt;/li&gt;
-&lt;li&gt;Install ASP.NET 5 on OS X&lt;/li&gt;
-&lt;li&gt;Generate ASP.NET MVC project&lt;/li&gt;
-&lt;li&gt;Build web application&lt;/li&gt;
-&lt;li&gt;Run it&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h1 id=&#34;install-homebrew&#34;&gt;Install Homebrew&lt;/h1&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;$ ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h1 id=&#34;install-asp-net-5-on-os-x&#34;&gt;Install ASP.NET 5 on OS X&lt;/h1&gt;
-
-&lt;pre&gt;&lt;code&gt;$ brew tap aspnet/dnx
-$ brew install dnvm
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now add &lt;code&gt;source dnvm.sh&lt;/code&gt; to your /.bash_profile, ~/.bashrc or ~/.zshrc at the end of file&lt;/p&gt;
-
-&lt;h1 id=&#34;generate-asp-net-mvc-project&#34;&gt;Generate ASP.NET MVC project&lt;/h1&gt;
-
-&lt;p&gt;Install &lt;a href=&#34;https://nodejs.org&#34;&gt;Node.js&lt;/a&gt; if you still don&amp;rsquo;t have it&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ brew install node
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now install CLI tool for running &lt;a href=&#34;http://yeoman.io&#34;&gt;Yeoman&lt;/a&gt; generators&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ npm install -g yo
-$ npm install -g generator-aspnet
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Navigate to folder where you want to generate ASP.NET 5 Web application and run generator&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ yo aspnet
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Specify app name and select &lt;code&gt;Web application&lt;/code&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;build-web-application&#34;&gt;Build web application&lt;/h1&gt;
-
-&lt;p&gt;ASP.NET 5 uses &lt;a href=&#34;http://bower.io&#34;&gt;Bower&lt;/a&gt; package manager&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ npm install -g bower
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Restore all dependencies&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ dnu restore
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Navigate to project root folder where &lt;code&gt;project.json&lt;/code&gt; and run build&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ dnu build
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h1 id=&#34;run-it&#34;&gt;Run it&lt;/h1&gt;
-
-&lt;p&gt;On OS X it&amp;rsquo;s possible to run ASP.NET application using &lt;a href=&#34;https://github.com/aspnet/KestrelHttpServer&#34;&gt;Kestrel&lt;/a&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ dnx . kestrel
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Open browser and navigate to &lt;code&gt;http://localhost:5001&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;You&amp;rsquo;ll get exception:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;An unhandled exception occurred while processing the request.
-
-IOException: kqueue() FileSystemWatcher has reached the maximum nunmber of files to watch.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This is caused by bug in Mono 4.0.1: &lt;a href=&#34;https://bugzilla.xamarin.com/show_bug.cgi?id=28693&#34;&gt;https://bugzilla.xamarin.com/show_bug.cgi?id=28693&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;WORKAROUND&lt;/strong&gt;:
-Add &lt;code&gt;export MONO_MANAGED_WATCHER=false&lt;/code&gt; to your /.bash_profile, ~/.bashrc or ~/.zshrc at the end of file&lt;/p&gt;
-
-&lt;p&gt;Re-run application &lt;code&gt;$ dnx . kestrel&lt;/code&gt; and refresh page&lt;/p&gt;
-
-&lt;p&gt;Congratulations!
-&lt;img src=&#34;https://vort3x.me/images/aspnet5-osx.png&#34; alt=&#34;ASP.NET 5 Web application on OS X&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Feel free to ask me any questions in the comments below.&lt;/p&gt;
-</description>
+      <guid>https://vort3x.me/post/asp-net-5-mvc-on-os-x/</guid>
+      <description>How to create, build and run ASP.NET 5 MVC web application on OS X
+Plan:
+ Install homebrew Install ASP.NET 5 on OS X Generate ASP.NET MVC project Build web application Run it  Install Homebrew $ ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;  Install ASP.NET 5 on OS X $ brew tap aspnet/dnx $ brew install dnvm  Now add source dnvm.sh to your /.bash_profile, ~/.bashrc or ~/.zshrc at the end of file</description>
     </item>
     
     <item>
       <title>Sails.js on Heroku</title>
-      <link>https://vort3x.me/sailsjs-heroku/</link>
+      <link>https://vort3x.me/post/sailsjs-heroku/</link>
       <pubDate>Tue, 19 May 2015 00:14:33 +0300</pubDate>
       
-      <guid>https://vort3x.me/sailsjs-heroku/</guid>
-      <description>
-
-&lt;p&gt;How to deploy your &lt;a href=&#34;http://sailsjs.org&#34;&gt;Sails.js&lt;/a&gt; application to &lt;a href=&#34;http://www.heroku.com&#34;&gt;Heroku&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://vort3x.me/images/sailsjs-logo.png&#34; alt=&#34;Sailsjs logo&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;First of all &lt;strong&gt;What is Sails.js&lt;/strong&gt;? Per &lt;a href=&#34;sailsjs.org&#34;&gt;sailsjs.org&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Sails makes it easy to build custom, enterprise-grade Node.js apps. It is designed to emulate the familiar MVC pattern of frameworks like Ruby on Rails, but with support for the requirements of modern apps: data-driven APIs with a scalable, service-oriented architecture. It&amp;rsquo;s especially good for building chat, realtime dashboards, or multiplayer games; but you can use it for any web application project - top to bottom.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;You can find more detailed information on how to create Sails.js application on their website: &lt;a href=&#34;http://sailsjs.org/#!/getStarted&#34;&gt;http://sailsjs.org/#!/getStarted&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://vort3x.me/images/heroku-logo.jpg&#34; alt=&#34;Heroku logo&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Heroku is a cloud platform as a service (PaaS). Heroku can build, deploy and run your Ruby, Node.js, Python, Java and PHP applications and it&amp;rsquo;s great platform for production and development environments.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h1 id=&#34;sails-js-deployment-to-heroku&#34;&gt;Sails.js deployment to Heroku&lt;/h1&gt;
-
-&lt;p&gt;We will need to create Heroku application first, then configure Sails.js application and deploy it from command shell using Git.&lt;/p&gt;
-
-&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites:&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Sails.js application&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://git-scm.com&#34;&gt;Git&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://signup.heroku.com/login&#34;&gt;Heroku account&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://toolbelt.heroku.com&#34;&gt;Heroku Toolbelt&lt;/a&gt; installed (CLI tool for creating and managing Heroku apps)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;create-heroku-application&#34;&gt;Create Heroku application&lt;/h2&gt;
-
-&lt;p&gt;First, you need to login into Heroku from your command shell&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ heroku login
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You&amp;rsquo;ll need to enter you email address and password.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Enter your Heroku credentials.
-Email: user@email.com
-Password (typing will be hidden):
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Create Heroku application:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ heroku create name-of-the-app-on-heroku
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Next, create Procfile in your Sails.js application&amp;rsquo;s folder.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ cd path/to/sailjs-project
-$ touch Procfile
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now open Procfile with your text editor (or vim/nano) and add &lt;code&gt;web: npm start&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;In your Sails.js application you should have &lt;code&gt;package.json&lt;/code&gt; file, open it and find scripts block then set start value with &lt;code&gt;sails lift&lt;/code&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;&amp;quot;scripts&amp;quot;: {
-  &amp;quot;start&amp;quot;: &amp;quot;sails lift&amp;quot;,
-  &amp;quot;debug&amp;quot;: &amp;quot;node debug app.js&amp;quot;
-},
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Create a new Git repository in your Sails.js application&amp;rsquo;s directory:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ git init
-$ heroku git:remote -a name-of-the-app-on-heroku
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Commit your code to the repository and deploy it:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ git add .
-$ git commit -m &amp;quot;Added my Sails.js project&amp;quot;
-$ git push heroku master
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You should wait until you get this message:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;remote: -----&amp;gt; Launching... done, v3
-remote:        https://name-of-the-app-on-heroku.herokuapp.com/ deployed to Heroku
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Congratulations! Now you can check your application by this URL: &lt;code&gt;https://name-of-the-app-on-heroku.herokuapp.com&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;To re-deploy your application, you&amp;rsquo;ll need to commit your changes and push to Heroku:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ cd path/to/sailjs-project
-$ git add .
-$ git commit -m &amp;quot;New changes&amp;quot;
-$ git push heroku master
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Feel free to ask me any questions in the comments below.&lt;/p&gt;
-</description>
+      <guid>https://vort3x.me/post/sailsjs-heroku/</guid>
+      <description>How to deploy your Sails.js application to Heroku.
+First of all What is Sails.js? Per sailsjs.org:
+ Sails makes it easy to build custom, enterprise-grade Node.js apps. It is designed to emulate the familiar MVC pattern of frameworks like Ruby on Rails, but with support for the requirements of modern apps: data-driven APIs with a scalable, service-oriented architecture. It&amp;rsquo;s especially good for building chat, realtime dashboards, or multiplayer games; but you can use it for any web application project - top to bottom.</description>
     </item>
     
     <item>
       <title>Powered by Ghost</title>
-      <link>https://vort3x.me/powered-by-ghost/</link>
+      <link>https://vort3x.me/post/powered-by-ghost/</link>
       <pubDate>Sat, 16 May 2015 00:23:08 +0300</pubDate>
       
-      <guid>https://vort3x.me/powered-by-ghost/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://vort3x.me/images/ghost-logo.png&#34; alt=&#34;The Ghost Logo&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Hello World!&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;I wanted to start blogging years ago and it&amp;rsquo;s time to start. I&amp;rsquo;ve chosen &lt;a href=&#34;https://ghost.org&#34;&gt;Ghost&lt;/a&gt; for my blog, hosted it on &lt;a href=&#34;https://www.digitalocean.com/?refcode=6f84941d4d97&#34;&gt;DigitalOcean&lt;/a&gt; and bought template made by &lt;a href=&#34;http://ecko.me&#34;&gt;EckoThemes&lt;/a&gt; from &lt;a href=&#34;http://themeforest.net/?ref=VorT3x&#34;&gt;ThemeForest&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Mostly I&amp;rsquo;ll write technical articles. Currently I feel real passion to &lt;a href=&#34;https://nodejs.org&#34;&gt;Node.js&lt;/a&gt; and want to dig it further, that&amp;rsquo;s one of the reasons why I&amp;rsquo;ve chosen &lt;a href=&#34;https://ghost.org&#34;&gt;Ghost&lt;/a&gt; for blogging, since it&amp;rsquo;s built on Node.js. I really like how simple it&amp;rsquo;s comparable to &lt;a href=&#34;https://wordpress.org&#34;&gt;Wordpress&lt;/a&gt; and it uses Markdown syntax for posts, which is also pleasant to use.&lt;/p&gt;
-
-&lt;p&gt;Stay tuned!&lt;/p&gt;
-</description>
+      <guid>https://vort3x.me/post/powered-by-ghost/</guid>
+      <description>Hello World!
+I wanted to start blogging years ago and it&amp;rsquo;s time to start. I&amp;rsquo;ve chosen Ghost for my blog, hosted it on DigitalOcean and bought template made by EckoThemes from ThemeForest.
+Mostly I&amp;rsquo;ll write technical articles. Currently I feel real passion to Node.js and want to dig it further, that&amp;rsquo;s one of the reasons why I&amp;rsquo;ve chosen Ghost for blogging, since it&amp;rsquo;s built on Node.js. I really like how simple it&amp;rsquo;s comparable to Wordpress and it uses Markdown syntax for posts, which is also pleasant to use.</description>
     </item>
     
   </channel>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Dmitri Logvinenko">
+<meta name="description" content="Thoughts, stories and ideas">
+<meta name="generator" content="Hugo 0.42-DEV" />
+<title>ASP.NET 5 MVC on OS X</title>
+<link rel="shortcut icon" href="https://vort3x.me/images/favicon.ico">
+<link rel="stylesheet" href="https://vort3x.me/css/style.css">
+<link rel="stylesheet" href="https://vort3x.me/css/highlight.css">
+
+
+
+<link rel="stylesheet" href="https://vort3x.me/css/monosocialiconsfont.css">
+
+
+
+<link href="https://vort3x.me/index.xml" rel="alternate" type="application/rss+xml" title="VorT3x&#39;s Blog" />
+
+
+<meta property="og:title" content="ASP.NET 5 MVC on OS X" />
+<meta property="og:description" content="How to create, build and run ASP.NET 5 MVC web application on OS X
+Plan:
+ Install homebrew Install ASP.NET 5 on OS X Generate ASP.NET MVC project Build web application Run it  Install Homebrew $ ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;  Install ASP.NET 5 on OS X $ brew tap aspnet/dnx $ brew install dnvm  Now add source dnvm.sh to your /.bash_profile, ~/.bashrc or ~/.zshrc at the end of file" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://vort3x.me/post/asp-net-5-mvc-on-os-x/" />
+
+
+
+<meta property="article:published_time" content="2015-06-28T19:18:08&#43;03:00"/>
+
+<meta property="article:modified_time" content="2015-06-28T19:18:08&#43;03:00"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="ASP.NET 5 MVC on OS X">
+<meta itemprop="description" content="How to create, build and run ASP.NET 5 MVC web application on OS X
+Plan:
+ Install homebrew Install ASP.NET 5 on OS X Generate ASP.NET MVC project Build web application Run it  Install Homebrew $ ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;  Install ASP.NET 5 on OS X $ brew tap aspnet/dnx $ brew install dnvm  Now add source dnvm.sh to your /.bash_profile, ~/.bashrc or ~/.zshrc at the end of file">
+
+
+<meta itemprop="datePublished" content="2015-06-28T19:18:08&#43;03:00" />
+<meta itemprop="dateModified" content="2015-06-28T19:18:08&#43;03:00" />
+<meta itemprop="wordCount" content="252">
+
+
+
+<meta itemprop="keywords" content="DOTNET,ASPNET,OSX," />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="ASP.NET 5 MVC on OS X"/>
+<meta name="twitter:description" content="How to create, build and run ASP.NET 5 MVC web application on OS X
+Plan:
+ Install homebrew Install ASP.NET 5 on OS X Generate ASP.NET MVC project Build web application Run it  Install Homebrew $ ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;  Install ASP.NET 5 on OS X $ brew tap aspnet/dnx $ brew install dnvm  Now add source dnvm.sh to your /.bash_profile, ~/.bashrc or ~/.zshrc at the end of file"/>
+<meta name="twitter:site" content="@https://www.twitter.com/vort3x"/>
+
+
+    </head>
+<body>
+    <nav class="main-nav">
+	
+		<a href='https://vort3x.me'> <span class="arrow">←</span>Home</a>
+	
+
+	
+
+	
+		<a class="cta" href="https://vort3x.me/index.xml">Subscribe</a>
+	
+</nav>
+
+    <section id="wrapper">
+        
+        
+<article class="post">
+    <header>
+        <h1>ASP.NET 5 MVC on OS X</h1>
+        <h2 class="subtitle"></h2>
+        <h2 class="headline">
+        June 28, 2015
+        <br>
+        
+        
+            
+                <a href="https://vort3x.me/tags/dotnet">DOTNET</a>
+            
+                <a href="https://vort3x.me/tags/aspnet">ASPNET</a>
+            
+                <a href="https://vort3x.me/tags/osx">OSX</a>
+            
+        
+        
+        </h2>
+    </header>
+    <section id="post-body">
+        
+
+<p><strong>How to create, build and run <a href="http://www.asp.net/mvc/mvc5">ASP.NET 5 MVC</a> web application on OS X</strong></p>
+
+<p><img src="/images/visual-studio-code.png" alt="Visual Studio Code" /></p>
+
+<p>Plan:</p>
+
+<ol>
+<li>Install homebrew</li>
+<li>Install ASP.NET 5 on OS X</li>
+<li>Generate ASP.NET MVC project</li>
+<li>Build web application</li>
+<li>Run it</li>
+</ol>
+
+<h1 id="install-homebrew">Install Homebrew</h1>
+
+<pre><code class="language-ruby">$ ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
+</code></pre>
+
+<h1 id="install-asp-net-5-on-os-x">Install ASP.NET 5 on OS X</h1>
+
+<pre><code>$ brew tap aspnet/dnx
+$ brew install dnvm
+</code></pre>
+
+<p>Now add <code>source dnvm.sh</code> to your /.bash_profile, ~/.bashrc or ~/.zshrc at the end of file</p>
+
+<h1 id="generate-asp-net-mvc-project">Generate ASP.NET MVC project</h1>
+
+<p>Install <a href="https://nodejs.org">Node.js</a> if you still don&rsquo;t have it</p>
+
+<pre><code>$ brew install node
+</code></pre>
+
+<p>Now install CLI tool for running <a href="http://yeoman.io">Yeoman</a> generators</p>
+
+<pre><code>$ npm install -g yo
+$ npm install -g generator-aspnet
+</code></pre>
+
+<p>Navigate to folder where you want to generate ASP.NET 5 Web application and run generator</p>
+
+<pre><code>$ yo aspnet
+</code></pre>
+
+<p>Specify app name and select <code>Web application</code></p>
+
+<h1 id="build-web-application">Build web application</h1>
+
+<p>ASP.NET 5 uses <a href="http://bower.io">Bower</a> package manager</p>
+
+<pre><code>$ npm install -g bower
+</code></pre>
+
+<p>Restore all dependencies</p>
+
+<pre><code>$ dnu restore
+</code></pre>
+
+<p>Navigate to project root folder where <code>project.json</code> and run build</p>
+
+<pre><code>$ dnu build
+</code></pre>
+
+<h1 id="run-it">Run it</h1>
+
+<p>On OS X it&rsquo;s possible to run ASP.NET application using <a href="https://github.com/aspnet/KestrelHttpServer">Kestrel</a></p>
+
+<pre><code>$ dnx . kestrel
+</code></pre>
+
+<p>Open browser and navigate to <code>http://localhost:5001</code></p>
+
+<p>You&rsquo;ll get exception:</p>
+
+<pre><code>An unhandled exception occurred while processing the request.
+
+IOException: kqueue() FileSystemWatcher has reached the maximum nunmber of files to watch.
+</code></pre>
+
+<p>This is caused by bug in Mono 4.0.1: <a href="https://bugzilla.xamarin.com/show_bug.cgi?id=28693">https://bugzilla.xamarin.com/show_bug.cgi?id=28693</a></p>
+
+<p><strong>WORKAROUND</strong>:
+Add <code>export MONO_MANAGED_WATCHER=false</code> to your /.bash_profile, ~/.bashrc or ~/.zshrc at the end of file</p>
+
+<p>Re-run application <code>$ dnx . kestrel</code> and refresh page</p>
+
+<p>Congratulations!
+<img src="/images/aspnet5-osx.png" alt="ASP.NET 5 Web application on OS X" /></p>
+
+<p>Feel free to ask me any questions in the comments below.</p>
+
+    </section>
+</article>
+
+<footer id="post-meta" class="clearfix">
+    <a href="https://twitter.com/VorT3x">
+    <img class="avatar" src="https://vort3x.me/images/avatar.png">
+    <div>
+        <span class="dark">Dmitri Logvinenko</span>
+        <span>Software developer who&#39;s passionate about writing code and learning new technologies. Currently concentrated on Go. Professionally works as Technical Lead.</span>
+    </div>
+    </a>
+    <section id="sharing">
+        <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fvort3x.me%2fpost%2fasp-net-5-mvc-on-os-x%2f - ASP.NET%205%20MVC%20on%20OS%20X by @VorT3x"><span class="icon-twitter"> tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a>
+
+    </section>
+</footer>
+
+<div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "VorT3x" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<ul id="post-list" class="archive readmore">
+    <h3>Read more</h3>
+
+    
+    
+    
+        <li>
+            <a href="/post/moved-to-hugo/">Github Pages &#43; Hugo = Love<aside class="dates">Sep 13 2015</aside></a>
+        </li>
+    
+        <li>
+            <a href="/post/sailsjs-heroku/">Sails.js on Heroku<aside class="dates">May 19 2015</aside></a>
+        </li>
+    
+        <li>
+            <a href="/post/powered-by-ghost/">Powered by Ghost<aside class="dates">May 16 2015</aside></a>
+        </li>
+    
+</ul>
+
+
+
+        <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    
+    <a class="symbol" href="https://www.github.com/vort3x">
+        github
+    </a>
+    
+    <a class="symbol" href="https://www.linkedin.com/in/dmitri-logvinenko">
+        linkedin
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/vort3x">
+        twitterbird
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+        © Copyright 2015-18 Dmitri Logvinenko
+    
+    </p>
+</footer>
+
+    </section>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://vort3x.me/js/main.js"></script>
+<script src="https://vort3x.me/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-62813262-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+</body>
+</html>
