@@ -13,10 +13,10 @@
     
     <item>
       <title>ASP.NET 5 MVC on OS X</title>
-      <link>https://vort3x.me/post/asp-net-5-mvc-on-os-x/</link>
+      <link>https://vort3x.me/asp-net-5-mvc-on-os-x/</link>
       <pubDate>Sun, 28 Jun 2015 19:18:08 +0300</pubDate>
       
-      <guid>https://vort3x.me/post/asp-net-5-mvc-on-os-x/</guid>
+      <guid>https://vort3x.me/asp-net-5-mvc-on-os-x/</guid>
       <description>How to create, build and run ASP.NET 5 MVC web application on OS X
 Plan:
  Install homebrew Install ASP.NET 5 on OS X Generate ASP.NET MVC project Build web application Run it  Install Homebrew $ ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;  Install ASP.NET 5 on OS X $ brew tap aspnet/dnx $ brew install dnvm  Now add source dnvm.sh to your /.bash_profile, ~/.bashrc or ~/.zshrc at the end of file</description>

@@ -13,10 +13,10 @@
     
     <item>
       <title>Github Pages &#43; Hugo = Love</title>
-      <link>https://vort3x.me/post/moved-to-hugo/</link>
+      <link>https://vort3x.me/moved-to-hugo/</link>
       <pubDate>Sun, 13 Sep 2015 19:03:00 +0300</pubDate>
       
-      <guid>https://vort3x.me/post/moved-to-hugo/</guid>
+      <guid>https://vort3x.me/moved-to-hugo/</guid>
       <description>I was aware of Jekyll and Github Pages long time ago, but I didn&amp;rsquo;t want to have Ruby environment to generate my blog, so I&amp;rsquo;ve ended up with Ghost blog on DigitalOcean.
 Few months ago when I was on vacation I started to learn Golang:
 Let the vacation begin! #golang @golang pic.twitter.com/LqAXc3g5ot

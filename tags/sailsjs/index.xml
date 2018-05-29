@@ -13,10 +13,10 @@
     
     <item>
       <title>Sails.js on Heroku</title>
-      <link>https://vort3x.me/post/sailsjs-heroku/</link>
+      <link>https://vort3x.me/sailsjs-heroku/</link>
       <pubDate>Tue, 19 May 2015 00:14:33 +0300</pubDate>
       
-      <guid>https://vort3x.me/post/sailsjs-heroku/</guid>
+      <guid>https://vort3x.me/sailsjs-heroku/</guid>
       <description>How to deploy your Sails.js application to Heroku.
 First of all What is Sails.js? Per sailsjs.org:
  Sails makes it easy to build custom, enterprise-grade Node.js apps. It is designed to emulate the familiar MVC pattern of frameworks like Ruby on Rails, but with support for the requirements of modern apps: data-driven APIs with a scalable, service-oriented architecture. It&amp;rsquo;s especially good for building chat, realtime dashboards, or multiplayer games; but you can use it for any web application project - top to bottom.</description>
